@@ -24,7 +24,7 @@ public class MyArc extends MyShape {
 	public double getCentralAngle() {return this.centralAngle;}
 	public double getMyArea() {return Math.PI*(Math.pow(radiusX, 2))*(centralAngle/360);}
 	public MyRectangle getMyBoundingRectangle() {return  new MyRectangle(super.getX(), 
-	super.getY(), radiusX, radiusY, super.getColor());}
+												super.getY(), radiusX, radiusY, super.getColor());}
 	public String toString() {
 		return "Dimensions -->"  + "Radius: " + getRadiusX() + "Start Angle: " + getStartAngle() + 
 				"Central Angle: "+ getCentralAngle() + "Arc Area: " + getMyArea();
@@ -36,3 +36,9 @@ public class MyArc extends MyShape {
 		gc.fillArc(super.getX(), super.getY(), radiusX, radiusY, startAngle, centralAngle, ArcType.ROUND);
 	}
 }
+
+
+
+
+
+
